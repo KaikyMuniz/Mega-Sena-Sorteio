@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    overflow-x: hidden;
+    background-color: #7ac5a249;
+}
+
+:root{
+    --cor-mega-sena: #00A056;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.container img{
+    width: 400px;
+}
+
+.escolher-numero-input{
+    margin: 0 20px 20px 0;
+    background-color: var(--cor-mega-sena);
+    box-shadow: 5px 5px 5px rgb(102, 102, 102);
+    border-color: transparent;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+    -moz-appearance: textfield;
+    opacity: 0.8;
+}
+
+.escolher-numero-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.escolher-numero-input:focus{
+    outline: none;
+    opacity: 1;
+}
+
+.center{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.sorteio-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-mega-sena);
+    box-shadow: 5px 5px 5px rgb(102, 102, 102);
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 5px;
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 500ms ease-in-out;
+}
+
+.sorteio-btn:hover{
+    opacity: 1;
+}
+
+.container-sorteio{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.numero-container{
+    margin: 0 20px 20px 0;
+    background-color: var(--cor-mega-sena);
+    box-shadow: 5px 5px 5px rgb(102, 102, 102);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    transition: 500ms ease-in-out;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.numero-container:hover{
+    opacity: 0.8;
+}
+
+h1{
+    text-align: center;
+    color: var(--cor-mega-sena);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(max-width: 900px){
+    .container img{
+        width: 90vw;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/icone.png">
+    <title>Mega-Sena</title>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo-megasena.png">
+    </div>
+    <p></p>
+    <h1>ESCOLHA SEUS NÚMEROS</h1>
+    <h1 id="aviso"></h1>
+    <div class="container-sorteio">
+        <input class="escolher-numero-input" type="number" id="numero-escolhido-1" oninput="limitInput()">
+        <input class="escolher-numero-input" type="number" id="numero-escolhido-2" oninput="limitInput()">
+        <input class="escolher-numero-input" type="number" id="numero-escolhido-3" oninput="limitInput()">
+        <input class="escolher-numero-input" type="number" id="numero-escolhido-4" oninput="limitInput()">
+        <input class="escolher-numero-input" type="number" id="numero-escolhido-5" oninput="limitInput()">
+        <input class="escolher-numero-input" type="number" id="numero-escolhido-6" oninput="limitInput()">
+    </div>
+    <br>
+    <br>
+    <p></p>
+    <span class="center">
+        <button id="sorteio-btn" class="sorteio-btn">REALIZAR SORTEIO</button>
+    </span>
+    <p></p>
+    <br>
+    <br>
+    <h1>RESULTADO</h1>
+    <div class="container-sorteio">
+        <div class="numero-container" id="resultado-numero-1">
+            
+        </div>
+
+        <div class="numero-container" id="resultado-numero-2">
+            
+        </div>
+
+        <div class="numero-container" id="resultado-numero-3">
+            
+        </div>
+
+        <div class="numero-container" id="resultado-numero-4">
+            
+        </div>
+
+        <div class="numero-container" id="resultado-numero-5">
+            
+        </div>
+
+        <div class="numero-container" id="resultado-numero-6">
+            
+        </div>
+    </div>
+    <p></p>
+    <br>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
